@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Form</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f0f4ff 0%, #d9e8ff 100%);
+        color: #1e293b;
+      }
+
+      .form-wrapper {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .user-form {
+        width: 100%;
+        max-width: 420px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 22px 48px rgba(15, 23, 42, 0.12);
+        padding: 32px;
+        border: 1px solid rgba(148, 163, 184, 0.25);
+      }
+
+      .user-form h1 {
+        margin: 0 0 18px;
+        font-size: 28px;
+        letter-spacing: -0.03em;
+        color: #0f172a;
+      }
+
+      .user-form p {
+        margin: 0 0 24px;
+        color: #475569;
+        line-height: 1.6;
+      }
+
+      .field-group {
+        display: grid;
+        gap: 18px;
+        margin-bottom: 24px;
+      }
+
+      .field-group label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #334155;
+      }
+
+      .field-group input,
+      .field-group select {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 12px;
+        background: #f8fafc;
+        font-size: 15px;
+        color: #0f172a;
+        outline: none;
+        transition: all 0.2s ease;
+      }
+
+      .field-group input:focus,
+      .field-group select:focus {
+        border-color: #5b8dff;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+        background: #ffffff;
+      }
+
+      .actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .actions button {
+        flex: 1 1 140px;
+        border: none;
+        border-radius: 12px;
+        padding: 14px 18px;
+        font-size: 15px;
+        cursor: pointer;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .actions button:hover {
+        transform: translateY(-1px);
+      }
+
+      .actions .submit-btn {
+        background: #2563eb;
+        color: #ffffff;
+      }
+
+      .actions .reset-btn {
+        background: #e2e8f0;
+        color: #334155;
+      }
+
+      .note {
+        margin-top: 16px;
+        font-size: 13px;
+        color: #64748b;
+      }
+
+      @media (max-width: 500px) {
+        .user-form {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form class="user-form">
+        <h1>Register User</h1>
+        <p>Complete the form below to create a new user account.</p>
+
+        <div class="field-group">
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="role">Role</label>
+          <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="submit-btn">Create Account</button>
+          <button type="reset" class="reset-btn">Clear</button>
+        </div>
+
+        <p class="note">
+          By submitting, you agree to our terms and privacy policy.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
