@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 24px;
+        background: #f7f8fb;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        background: #ffffff;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+        border: 1px solid #e2e8f0;
+        text-align: left;
+      }
+
+      thead th {
+        background: #c47112;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      tbody tr:nth-child(even) {
+        background: #f3f6fb;
+      }
+
+      tbody tr:hover {
+        background: #e8eef9;
+      }
+
+      td {
+        color: #24324a;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Team A</td>
+          <td>John Doe</td>
+          <td>30</td>
+          <td>New York</td>
+          <td>john.doe@example.com</td>
+          <td>123-456-7890</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>25</td>
+          <td>Los Angeles</td>
+          <td>jane.smith@example.com</td>
+          <td>098-765-4321</td>
+        </tr>
+        <tr>
+          <td>Bob Johnson</td>
+          <td>40</td>
+          <td>Chicago</td>
+          <td>bob.johnson@example.com</td>
+          <td>555-555-5555</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Team B</td>
+          <td>John Doe</td>
+          <td>30</td>
+          <td>New York</td>
+          <td>john.doe@example.com</td>
+          <td>123-456-7890</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>25</td>
+          <td>Los Angeles</td>
+          <td>jane.smith@example.com</td>
+          <td>098-765-4321</td>
+        </tr>
+        <tr>
+          <td>Bob Johnson</td>
+          <td>40</td>
+          <td>Chicago</td>
+          <td>bob.johnson@example.com</td>
+          <td>555-555-5555</td>
+        </tr>
+        <tr>
+          <td colspan="6" style="text-align: center">
+            This row uses colspan="6" to span the full table width.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
