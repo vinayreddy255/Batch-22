@@ -1,0 +1,7 @@
+Void Elements(br,hr,input),
+inline Elements
+    span, i, b,u,sub,sup
+    img
+    a
+    input
+    label
