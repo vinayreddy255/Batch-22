@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur corrupti dignissimos! Debitis vel quis ullam natus similique inventore deserunt quod, expedita aliquam corrupti commodi aperiam voluptas? Voluptatibus, itaque distinctio!</p>
+    <p>This is paragraph tag</p>
+    <!-- p is the paragraph tag and it is used to define a paragraph of text in HTML. 
+     It is a block-level element, which means it will take up the full width and will start on a new line. 
+     The content inside the <p> tag is typically displayed as a block of text with some spacing above and below it.
+     The <p> tag is commonly used to format text content on web pages, making it easier to read and organize information. -->
+    <div>This is a div tag</div>
+    <div>This is the second div tag</div>
+    <!-- div is the division tag and it is used to group together HTML elements and apply styles or scripts to them.
+    It is a block-level element, which means it will take up the full width and will start on a new line. 
+    The <div> tag is often used as a container for other HTML elements, allowing developers to structure their web pages and apply CSS styles or JavaScript functionality to specific sections of the content. 
+    It does not have any semantic meaning on its own, but it is a versatile element that can be used for various purposes in web development, such as creating layouts, organizing content, and applying styles. -->
+
+    <!-- difference -->
+    <!-- p tag will give some space above and below the text but div tag will not give any space above and below the text. -->
+
+    <!-- opening and closing the tags is very important -->
+    <div>
+        <div>
+            This is the DIV tag inside the DIV tag
+            <p>This is a paragraph inside the DIV tag</p>
+            <p>This is another paragraph inside the DIV tag</p>
+        </div>
+    </div>
+
+    <!-- opening and closing the tags is very important -->
+     <!-- if i miss the inside the DIV tag div closing in html you cannot see any difference -->
+    <div>
+        <div>
+            This is the DIV tag inside the DIV tag
+            <p>This is a paragraph inside the DIV tag</p>
+            <p>This is another paragraph inside the DIV tag</p>
+    </div>
+
+
+     <!-- opening and closing the tags is very important -->
+     <!-- here, we can see that if the opening and closing tags are not properly nested, it can lead to unexpected results -->
+     <!-- we can see the difference when you are going for the styling and scripting -->
+    <div>
+        <div class="div1">
+            This is the DIV tag inside the DIV tag
+            <div>
+                <p>This is a paragraph inside the DIV tag</p>
+                <p>This is another paragraph inside the DIV tag</p>
+            </div>
+    </div>
+
+
+    <!-- opening and closing the tags is very important -->
+    <!-- here, we can see that if the opening and closing tags are properly nested, it will work as expected -->
+    <div>
+        <div class="div1">
+            This is the DIV tag inside the DIV tag
+        </div>
+            <div>
+                <p>This is a paragraph inside the DIV tag</p>
+                <p>This is another paragraph inside the DIV tag</p>
+            </div>
+    </div>
+</body>
+</html>
