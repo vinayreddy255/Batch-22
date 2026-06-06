@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+        <!--
+        FORM TAGS AND ATTRIBUTES
+
+        1. <form>
+        - The <form> tag is used to create an HTML form that collects user input.
+        - It acts as a container for form elements such as text fields, radio buttons, checkboxes, and submit buttons.
+
+        2. action
+        - The action attribute specifies the URL or server location where the form data will be sent after submission.
+
+        3. method
+        - The method attribute defines how the form data is transmitted to the server.
+        - Common values are GET and POST.
+
+        4. GET
+        - Sends form data through the URL as query parameters.
+        - Suitable for searching, filtering, and retrieving data.
+        - Data is visible in the browser's address bar.
+
+        5. POST
+        - Sends form data within the HTTP request body.
+        - Suitable for sensitive information such as login credentials, registration details, and file uploads.
+        - Data is not displayed in the URL.
+
+        6. <label>
+        - The <label> tag provides a descriptive text for a form control.
+        - It improves accessibility and user experience.
+
+        7. for
+        - The for attribute is used inside the <label> tag.
+        - It connects the label to a specific form element using the element's id value.
+        - Clicking the label focuses or selects the associated input field.
+
+        8. <input>
+        - The <input> tag is used to create various types of user input fields.
+        - The behavior of the input field depends on the type attribute.
+
+        9. type
+        - The type attribute specifies the kind of input field to display.
+        - Examples: text, password, email, radio, checkbox, file, submit, number, date, etc.
+
+        10. id
+            - The id attribute provides a unique identifier for an HTML element.
+            - It is commonly used with labels, CSS styling, and JavaScript.
+
+        11. name
+            - The name attribute specifies the key used when sending form data to the server.
+            - The server uses this name to identify the submitted value.
+
+        12. required
+            - The required attribute makes a field mandatory.
+            - The form cannot be submitted until the user provides a value.
+
+        13. radio
+            - The radio input type allows users to select only one option from a group.
+            - Multiple radio buttons must share the same name attribute to function as a group.
+
+        14. checkbox
+            - The checkbox input type allows users to select one, multiple, or no options.
+            - Each checkbox operates independently.
+
+        15. file
+            - The file input type allows users to upload files from their device.
+            - Commonly used for uploading documents, images, videos, and other files.
+
+        16. accept
+            - The accept attribute is used with file inputs.
+            - It restricts the types of files that users can select.
+            - Example:
+            accept=".pdf,.docx"
+            accept="image/*"
+            accept="video/*"
+        -->
+    <form action="" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="120">
+        <br>
+        <br>
+
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <br>
+
+        <label for="month">Month of Birth:</label>
+        <input type="month" id="month" name="month">
+        <br>
+        <br>
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week">
+        <br>
+        <br>
+
+        <label for="datetime">Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime">
+        <br>
+        <br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>      
+        <input type="radio" id="female" name="gender" value="female">   
+        <label for="female">Female</label>  
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br>
+        <br>
+
+        <label for="Course">Course:</label>
+        <input type="checkbox" id="course1" name="course" value="HTML">
+        <label for="course1">HTML</label>
+        <input type="checkbox" id="course2" name="course" value="CSS">
+        <label for="course2">CSS</label>
+        <input type="checkbox" id="course3" name="course" value="JavaScript">
+        <label for="course3">JavaScript</label> 
+        <br>
+        <br>
+
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file">
+        <br>
+        <br>
+
+        <label for="multiple">Multiple Files:</label>
+        <input type="file" id="multiple" name="multiple" multiple>
+        <br>
+        <br>
+
+        <label for="accept only pdfs">Accept only PDFs:</label>
+        <input type="file" id="pdf" name="pdf" accept=".pdf,application/pdf">
+        <br>
+        <br>
+
+        <label for="accept pdf and images">Accept PDF and Images:</label>
+        <input type="file" id="pdf-images" name="pdf-images" accept=".pdf,image/*">
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
