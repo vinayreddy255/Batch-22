@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+.container{
+    width:850px;
+    background:white;
+    padding:25px;
+    border-radius:30px;
+}
+h1{
+    text-align:center;
+    color:#4b2bbd;
+    text-decoration:underline;
+    margin-bottom:20px;
+}
+form{
+    background:#5b2bd9;
+    color:white;
+    padding:20px;
+}
+.row{
+    margin-bottom:15px;
+}
+label{
+    display:inline-block;
+    width:130px;
+    font-size:14px;
+    font-weight:bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width:150px;
+    padding:5px;
+}
+select{
+    padding:4px;
+}
+textarea{
+    width:280px;
+    height:80px;
+    resize:none;
+}
+.note{
+    font-size:12px;
+    margin-left:5px;
+}
+
+.table-section{
+    margin-top:15px;
+}
+
+.table-label{
+    display:inline-block;
+    width:130px;
+    font-weight:bold;
+    vertical-align:top;
+}
+
+table{
+    display:inline-table;
+    width:560px;
+    border-collapse:collapse;
+    font-size:13px;
+}
+
+table,
+th,
+td{
+    border:1px solid white;
+}
+
+th,
+td{
+    padding:5px;
+    text-align:center;
+}
+
+table input{
+    width:70px;
+    padding:3px;
+}
+.buttons{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    padding:6px 15px;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<form>
+
+<div class="row">
+<label>FIRST NAME</label>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</div>
+
+<div class="row">
+<label>LAST NAME</label>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</div>
+
+<div class="row">
+    <label>DATE OF BIRTH</label>
+    <input type="date">
+</div>
+
+<div class="row">
+<label>EMAIL ID</label>
+<input type="email">
+</div>
+
+<div class="row">
+<label>MOBILE NUMBER</label>
+<input type="tel">
+<span class="note">(10 digit number)</span>
+</div>
+
+<div class="row">
+<label>GENDER</label>
+
+<input type="radio" name="gender"> Male
+
+<input type="radio" name="gender"> Female
+
+<input type="radio" name="gender"> Other
+</div>
+
+<div class="row">
+<label>ADDRESS</label>
+<textarea></textarea>
+</div>
+
+<div class="row">
+<label>CITY</label>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</div>
+
+<div class="row">
+<label>PIN CODE</label>
+<input type="text">
+<span class="note">(6 digit number)</span>
+</div>
+
+<div class="row">
+<label>STATE</label>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</div>
+
+<div class="row">
+<label>COUNTRY</label>
+<input type="text" value="India">
+</div>
+
+<div class="row">
+<label>HOBBIES</label>
+
+<input type="checkbox"> Drawing
+
+<input type="checkbox"> Singing
+
+<input type="checkbox"> Dancing
+
+<input type="checkbox"> Sketching
+
+<br><br>
+
+<label></label>
+
+<input type="checkbox"> Others
+
+<input type="text" style="width:120px;">
+</div>
+
+<div class="table-section">
+
+<span class="table-label">QUALIFICATION</span>
+
+<table>
+
+<tr>
+<th>Sl.No</th>
+<th>Examination</th>
+<th>Board</th>
+<th>Percentage</th>
+<th>Year of Passing</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<div class="row">
+<label>COURSES APPLIED FOR</label>
+
+<input type="radio" name="course"> BCA
+
+<input type="radio" name="course"> B.Com
+
+<input type="radio" name="course"> B.Sc
+
+<input type="radio" name="course"> B.A
+</div>
+
+<div class="buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
