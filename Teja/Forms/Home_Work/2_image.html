@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Registration Form</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#111;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .frame{
+      background:linear-gradient(180deg,#2e0d91,#5a2fb8);
+      width:900px;
+      border-radius:18px;
+      padding:26px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);
+      border:6px solid #0b0b0b;
+    }
+
+    .card{
+      background: #4b14c2;
+      padding:22px;
+      border-radius:10px;
+      color:#fff;
+    }
+
+    h1{
+      text-align:center;
+      text-decoration:underline;
+      margin:6px 0 18px 0;
+      font-size:22px;
+      color:#fff;
+    }
+
+    .row{
+      display:flex;
+      gap:14px;
+      margin-bottom:12px;
+      align-items:center;
+    }
+
+    label.block{
+      width:180px;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], select, textarea{
+      padding:6px 8px;
+      border-radius:4px;
+      border:1px solid #ddd;
+      font-size:13px;
+      width:220px;
+    }
+
+    textarea{height:70px; resize:vertical; width:420px}
+
+    .dob-selects select{width:72px}
+
+    .small{width:120px}
+
+    .hobbies label{font-weight:600; margin-right:12px;}
+
+    table.qual{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+      margin-bottom:12px;
+    }
+    table.qual th, table.qual td{padding:6px; border:1px solid rgba(255,255,255,0.1); color:#fff}
+    table.qual input{width:100%; padding:6px}
+
+    .actions{display:flex; gap:8px; justify-content:center; margin-top:16px}
+    .btn{padding:6px 12px; border-radius:6px; border:1px solid #ccc; cursor:pointer}
+    .btn.submit{background:#fff; color:#333}
+    .btn.reset{background:#eee}
+
+    .radio-group{display:flex; gap:12px; align-items:center}
+
+    /* Responsiveness */
+    @media (max-width:920px){
+      .frame{width:100%}
+      .row{flex-direction:column; align-items:flex-start}
+      label.block{width:100%}
+      input[type="text"], input[type="email"], select{width:100%}
+      textarea{width:100%}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="frame">
+    <div class="card">
+      <h1>STUDENT REGISTRATION FORM</h1>
+
+      <form>
+        <div class="row">
+          <label class="block">FIRST NAME</label>
+          <input type="text" name="first" maxlength="30" />
+          <span style="color:#fff; margin-left:8px; font-size:12px">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label class="block">LAST NAME</label>
+          <input type="text" name="last" maxlength="30" />
+          <span style="color:#fff; margin-left:8px; font-size:12px">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label class="block">DATE OF BIRTH</label>
+          <div class="dob-selects">
+            <select name="day">
+              <option>Day</option>
+              <!-- 1..31 -->
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+            </select>
+            <select name="month">
+              <option>Month</option>
+              <option>Jan</option>
+              <option>Feb</option>
+              <option>Mar</option>
+            </select>
+            <select name="year">
+              <option>Year</option>
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="block">EMAIL ID</label>
+          <input type="email" name="email" />
+        </div>
+
+        <div class="row">
+          <label class="block">MOBILE NUMBER</label>
+          <input type="text" name="mobile" class="small" maxlength="10" />
+          <span style="color:#fff; margin-left:8px; font-size:12px">(10 digit number)</span>
+        </div>
+
+        <div class="row">
+          <label class="block">GENDER</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" /> Male</label>
+            <label><input type="radio" name="gender" value="female" /> Female</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="block">ADDRESS</label>
+          <textarea name="address"></textarea>
+        </div>
+
+        <div class="row">
+          <label class="block">CITY</label>
+          <input type="text" name="city" maxlength="30" />
+          <span style="color:#fff; margin-left:8px; font-size:12px">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label class="block">PIN CODE</label>
+          <input type="text" name="pincode" maxlength="6" class="small" />
+          <span style="color:#fff; margin-left:8px; font-size:12px">(6 digit number)</span>
+        </div>
+
+        <div class="row">
+          <label class="block">STATE</label>
+          <input type="text" name="state" maxlength="30" />
+          <span style="color:#fff; margin-left:8px; font-size:12px">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label class="block">COUNTRY</label>
+          <select name="country" class="small">
+            <option>India</option>
+            <option>USA</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label class="block">HOBBIES</label>
+          <div class="hobbies">
+            <label><input type="checkbox" name="hobby" value="drawing" /> Drawing</label>
+            <label><input type="checkbox" name="hobby" value="singing" /> Singing</label>
+            <label><input type="checkbox" name="hobby" value="dancing" /> Dancing</label>
+            <label><input type="checkbox" name="hobby" value="sketching" /> Sketching</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="block">OTHERS</label>
+          <input type="text" name="others" />
+        </div>
+
+        <div style="margin-top:12px; color:#fff; font-weight:700">QUALIFICATION</div>
+        <table class="qual">
+          <thead>
+            <tr><th>Sl.No. Examination</th><th>Board</th><th>Percentage</th><th>Year of Passing</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Class X</td>
+              <td><input type="text" maxlength="10"/></td>
+              <td><input type="text"/></td>
+              <td><input type="text"/></td>
+            </tr>
+            <tr>
+              <td>2 Class XII</td>
+              <td><input type="text" maxlength="10"/></td>
+              <td><input type="text"/></td>
+              <td><input type="text"/></td>
+            </tr>
+            <tr>
+              <td>3 Graduation</td>
+              <td><input type="text" maxlength="10"/></td>
+              <td><input type="text"/></td>
+              <td><input type="text"/></td>
+            </tr>
+            <tr>
+              <td>4 Masters</td>
+              <td><input type="text" maxlength="10"/></td>
+              <td><input type="text"/></td>
+              <td><input type="text"/></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row">
+          <label class="block">COURSES APPLIED FOR</label>
+          <div class="radio-group">
+            <label><input type="radio" name="course"/> BCA</label>
+            <label><input type="radio" name="course"/> B.Com</label>
+            <label><input type="radio" name="course"/> B.Sc</label>
+            <label><input type="radio" name="course"/> B.A</label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn submit">Submit</button>
+          <button type="reset" class="btn reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
