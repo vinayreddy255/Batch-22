@@ -1,0 +1,13 @@
+inline
+internal
+external
+
+selectors
+ id
+ class
+ element
+ attribute
+ unversall(*)
+
+ psedoclass
+ psedoEleemnts
