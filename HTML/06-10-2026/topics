@@ -18,21 +18,3 @@ minheight
 
 visibility
 opacity
-
-display
-  none
-  block
-  inline
-  inlineblock
-  flex
-  grid
-
-positiont
-  right
-  bottom
-  left
-zindex
-overflow
-visibility
-float
-clear

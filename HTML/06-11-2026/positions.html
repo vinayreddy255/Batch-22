@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 200vh;
+      }
+      .div-block {
+        width: 50px;
+        height: 50px;
+        background-color: lightblue;
+        margin: 5px;
+        display: inline-block;
+      }
+      .div3 {
+        /* position: relative; */
+        /* position: absolute; */
+        /* position: fixed; */
+        position: sticky;
+        top: 0px;
+        /* top,right,bottom,left */
+        /* z-index: 1; */
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Positions</h1>
+      <div class="div-block">1</div>
+      <div class="div-block">2</div>
+      <div class="div-block div3">3</div>
+      <div class="div-block">4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+display
+  none
+  block
+  inline
+  inlineblock
+  flex
+  grid
+
+positiont
+  relative
+  absolute
+  fixed
+  stickey
+    top
+    right
+    bottom
+    left
+
+zindex
+
+overflow
+visibility
+float
+clear
