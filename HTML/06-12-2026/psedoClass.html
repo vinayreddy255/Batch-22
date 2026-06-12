@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div-container::first-line {
+        color: red;
+        font-size: 20px;
+      }
+      .div-container::first-letter {
+        color: blue;
+        font-size: 30px;
+      }
+      .div-container::before {
+        content: "Test123";
+        color: green;
+      }
+      .div-container::after {
+        content: "End of the div";
+        color: orange;
+      }
+      input::placeholder {
+        color: purple;
+        font-style: italic;
+      }
+      li::marker {
+        color: brown;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-container">
+      Earlier on Thursday (June 11, 2026), Mr. Trump said that the U.S. will
+      strike Iran “very hard”, adding that “At some point in the not too distant
+      future, we will be taking Kharg Island, and other oil infrastructure
+      points, and assume total control of their Oil and Gas Markets”.
+    </div>
+    <p>
+      <input type="text" placeholder="Enter your name" />
+    </p>
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
+  </body>
+</html>
