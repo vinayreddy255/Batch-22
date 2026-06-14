@@ -3,74 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
-    <form action="https://www.google.com" method="post">
-      <label for="name">Name*:</label>
-      <input type="text" id="name" name="name" required />
-      <br />
+    <div class="form-container">
+      <form action="https://www.google.com" method="post">
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="name" required />
 
-      <label for="phone">Phone:</label>
-      <input type="number" id="phone" name="phone" />
-      <br />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-      <br />
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required />
-      <br />
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" />
-      <br />
-      <label for="month">Month:</label>
-      <input type="month" id="month" name="month" />
-      <br />
-      <label for="week">Week:</label>
-      <input type="week" id="week" name="week" />
-      <br />
-      <label for="time">Time:</label>
-      <input type="time" id="time" name="time" />
-      <br />
-      <label for="datetime-local">Date and Time:</label>
-      <input type="datetime-local" id="datetime-local" name="datetime-local" />
-      <br />
-      <label for="course">Course:</label>
-      <input type="checkbox" id="Html" name="Html" checked />
-      <label for="Html">HTML</label>
-      <input type="checkbox" id="Css" name="Css" checked />
-      <label for="Css">CSS</label>
-      <input type="checkbox" id="Js" name="Js" />
-      <label for="Js">JavaScript</label>
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone" />
 
-      <br />
-      <label for="gender">Gender:</label>
-      <input type="radio" id="male" name="gender" value="male" checked />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female" />
-      <label for="female">Female</label>
-      <input type="radio" id="other" name="gender" value="other" />
-      <label for="other">Other</label>
-      <br />
-      <label for="fileSingle">Upload File (PDF or JPG):</label>
-      <input
-        type="file"
-        id="fileSingle"
-        name="fileSingle"
-        accept=".pdf,.jpg,.jpeg,application/pdf,image/jpeg"
-      />
-      <br />
-      <label for="fileMultiple">Multiple Upload File (PDF or JPG):</label>
-      <input
-        type="file"
-        id="fileMultiple"
-        name="fileMultiple"
-        multiple
-        accept=".pdf,.jpg,.jpeg,application/pdf,image/jpeg"
-      />
-      <br />
-      <textarea id="message" name="message" rows="10" cols="20"> </textarea>
-      <button type="submit">Submit</button>
-    </form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month" />
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week" />
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" />
+
+        <label for="datetime-local">Date and Time:</label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local" />
+
+        <label for="course">Course:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="Html" name="Html" checked /> HTML</label>
+          <label><input type="checkbox" id="Css" name="Css" checked /> CSS</label>
+          <label><input type="checkbox" id="Js" name="Js" /> JavaScript</label>
+        </div>
+
+        <label for="gender">Gender:</label>
+        <div class="radio-group">
+          <label><input type="radio" id="male" name="gender" value="male" checked /> Male</label>
+          <label><input type="radio" id="female" name="gender" value="female" /> Female</label>
+          <label><input type="radio" id="other" name="gender" value="other" /> Other</label>
+        </div>
+
+        <label for="fileSingle">Upload File (PDF or JPG):</label>
+        <input type="file" id="fileSingle" name="fileSingle" accept=".pdf,.jpg,.jpeg,application/pdf,image/jpeg" />
+
+        <label for="fileMultiple">Multiple Upload File (PDF or JPG):</label>
+        <input type="file" id="fileMultiple" name="fileMultiple" multiple accept=".pdf,.jpg,.jpeg,application/pdf,image/jpeg" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
