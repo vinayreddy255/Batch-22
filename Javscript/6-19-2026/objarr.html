@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var objAr = {
+      name: "siva",
+      address: {
+        street: {
+          name: "street1 marthali",
+          pincdoes: [5252, 6263, 8789],
+          bluding: "#19",
+        },
+        phone: [909090, 8394853],
+      },
+      countrys: [
+        "india",
+        "srilank",
+        "usa",
+        { states: ["na", "da"], phone: 909000, pin: [123, 456, 789] },
+      ],
+    };
+    console.log(objAr.address.street.pincdoes[1]);
+    console.log(objAr.countrys[3].pin[1]);
+  </script>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var obj = { name: "siva", phone: 911111, city: "Banglore", x: "xyz" };
+    var x = "names";
+
+    console.log(obj.name);
+    console.log(obj.city);
+    console.log(obj["x"]); //xyz
+    console.log(obj["city"]);
+    console.log(obj[x]); //
+    var nobj = {
+      name: "ram",
+      address: { city: "banglore", street: { landmark: "near colleage" } },
+      country: "india",
+      phone: 28394723,
+      pincode: {
+        a: 123,
+        b: 74738,
+        c: 90909,
+        limit: { x: 67676, y: 9090, z: 4567 },
+      },
+    };
+    console.log(nobj.address.street.landmark);
+    console.log(nobj.pincode.limit.z);
+  </script>
+</html>
