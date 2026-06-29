@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function calcultor(a, b, symbol){
+        switch (symbol) {
+            case "+":
+                result = a+b;
+                console.log(result);
+                break;
+            case "-":
+                result = a-b;
+                console.log(result);
+                break;
+            case "*":
+                result = a*b;
+                console.log(result);
+                break;
+            case "/":
+                result = a/b;
+                console.log(result);
+                break;
+            case "%":
+                result = a/b;
+                console.log(result);
+                break;
+            default:
+                console.log("No Vaild");
+                break;
+        }
+    }  
+    calcultor(10,20,"*");
+</script>
+</html>
