@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="test1"></div>
+    <div id="test2"></div>
+  </body>
+  <script>
+    // var a = 10 + 20;
+    // var b = 20 + 30;
+    // var c = 50 + 60;
+    // console.log(80 + 40);
+    // console.log(80 + 90);
+
+    function addition(a, b) {
+      var result = a + b;
+      return result;
+      // console.log(result);
+    }
+    function test(a = 10, b = 10) {
+      var output = a + b;
+      return output;
+    }
+    document.getElementById("test1").innerHTML = addition(10, 20);
+    document.getElementById("test2").innerHTML = test(100, 50);
+    /**
+     * arthmetic(10,20,+) = 30
+     * arthmetic(10,20,-) = -10
+     * arthmetic(10,20,*) = 200
+     * arthmetic(10,20,%)
+     * arthmetic(10,20,/)
+     * arthmetic(10,20) // we are not able to perform the action
+     */
+  </script>
+</html>
