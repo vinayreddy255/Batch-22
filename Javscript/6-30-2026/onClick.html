@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="hello()">Click</button>
+    <h2 id="clickText"></h2>
+  </body>
+  <script>
+    var count = 1;
+    function hello() {
+      // alert("Hello React Js....");
+      document.getElementById("clickText").innerHTML =
+        "Hello React Js " + count;
+      count = count + 1;
+    }
+  </script>
+</html>

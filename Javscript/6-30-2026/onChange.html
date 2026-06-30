@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- citys -->
+    <select onchange="selectCitys(event)">
+      <option>----please slect---</option>
+      <option>Banglore</option>
+      <option>Hyderbad</option>
+      <option>Pune</option>
+      <option>Chennai</option>
+      <option>Delhi</option>
+    </select>
+    <h2 id="select"></h2>
+  </body>
+  <script>
+    function selectCitys(e) {
+      console.log("hi", e);
+      document.getElementById("select").innerHTML = e.target.value;
+    }
+  </script>
+</html>

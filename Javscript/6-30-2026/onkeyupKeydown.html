@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input onkeydown="keypress()" id="inputText" /> -->
+    <input onkeyup="keypress()" id="inputText" />
+    <h2 id="keydown"></h2>
+  </body>
+  <script>
+    function keypress() {
+      var inputvalue = document.getElementById("inputText").value;
+      document.getElementById("keydown").innerHTML = inputvalue;
+    }
+  </script>
+</html>
