@@ -6,36 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="test1"></div>
 </body>
 <script>
     function calcultor(a, b, symbol){
         switch (symbol) {
             case "+":
                 result = a+b;
-                console.log(result);
+                return result;
                 break;
             case "-":
                 result = a-b;
-                console.log(result);
+                return result;                
                 break;
             case "*":
                 result = a*b;
-                console.log(result);
+                return result;
                 break;
             case "/":
                 result = a/b;
-                console.log(result);
+                return result;
                 break;
             case "%":
                 result = a/b;
-                console.log(result);
+                return result;
                 break;
             default:
-                console.log("No Vaild");
+                return "Invaild Operand"
                 break;
         }
     }  
-    calcultor(10,20,"*");
+    document.getElementById("test1").innerHTML = calcultor(10, 20, "+");
+    //document.getElementById("test1").innerHTML = calcultor(10, 20, "-");
+    //document.getElementById("test1").innerHTML = calcultor(10, 20, "*");
+   // document.getElementById("test1").innerHTML = calcultor(10, 20, "/");
+   // document.getElementById("test1").innerHTML = calcultor(10, 20, "%");
 </script>
 </html>
