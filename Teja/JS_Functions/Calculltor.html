@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test1"></div>
+</body>
+<script>
+    function calcultor(a, b, symbol){
+        switch (symbol) {
+            case "+":
+                result = a+b;
+                return result;
+                break;
+            case "-":
+                result = a-b;
+                return result;                
+                break;
+            case "*":
+                result = a*b;
+                return result;
+                break;
+            case "/":
+                result = a/b;
+                return result;
+                break;
+            case "%":
+                result = a/b;
+                return result;
+                break;
+            default:
+                return "Invaild Operand"
+                break;
+        }
+    }  
+    document.getElementById("test1").innerHTML = calcultor(10, 20, "+");
+    //document.getElementById("test1").innerHTML = calcultor(10, 20, "-");
+    //document.getElementById("test1").innerHTML = calcultor(10, 20, "*");
+   // document.getElementById("test1").innerHTML = calcultor(10, 20, "/");
+   // document.getElementById("test1").innerHTML = calcultor(10, 20, "%");
+</script>
+</html>
