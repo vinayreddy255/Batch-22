@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      Country:
+      <select id="countrys" onchange="selectCountry(event)"></select>
+    </div>
+    <br />
+    <div>
+      State:
+      <select id="states"></select>
+    </div>
+  </body>
+  <script>
+    var countrys = document.getElementById("countrys");
+    var countryList = ["India", "USA", "Canada", "Mexico", "Germany", "France"];
+    var states = {
+      India: ["Delhi", "Mumbai", "Bangalore", "Chennai", "Kolkata"],
+      USA: ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+      Canada: ["Toronto", "Vancouver", "Montreal", "Calgary", "Ottawa"],
+      Mexico: ["Mexico City", "Guadalajara", "Monterrey", "Puebla", "Tijuana"],
+      Germany: ["Berlin", "Hamburg", "Munich", "Cologne", "Frankfurt"],
+      France: ["Paris", "Marseille", "Lyon", "Toulouse", "Nice"],
+    };
+    var option = "<option value=''>Select Country</option>";
+    for (var i = 0; i < countryList.length; i++) {
+      option +=
+        "<option value='" +
+        countryList[i] +
+        "'>" +
+        countryList[i] +
+        "</option>";
+    }
+    countrys.innerHTML = option;
+
+    function selectCountry(event) {
+      var selectedCountry = event.target.value;
+      var statesSelection = document.getElementById("states");
+      statesSelection.innerHTML = "<option value=''>Select State</option>";
+      if (selectedCountry && states[selectedCountry]) {
+        for (var i = 0; i < states[selectedCountry].length; i++) {
+          var stateOption =
+            "<option value='" +
+            states[selectedCountry][i] +
+            "'>" +
+            states[selectedCountry][i] +
+            "</option>";
+          statesSelection.innerHTML += stateOption;
+        }
+      }
+    }
+    console.log(selectedCountry);
+  </script>
+</html>

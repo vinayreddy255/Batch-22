@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * Global Scope: Variables declared outside of any function or block are in the global scope. They can be accessed from anywhere in the code.
+     * Function Scope: Variables declared within a function are in the function scope. They can only be accessed within that function.
+     * Block Scope: Variables declared with let or const within a block (e.g., inside an if statement or a loop) are in the block scope. They can only be accessed within that block.
+     */
+    var x = 10; // Global scope
+    function myFunction() {
+      x = 50;
+      var y = 20; // Function scope
+      console.log("inside function..x:", x); //50
+      console.log("inside function y:", y); //20
+    }
+
+    console.log("outside function x:", x); //10
+    // console.log("outside function y:", y); // ReferenceError: y is not defined
+    myFunction();
+
+    // var reslut = 10;
+    {
+      var reslut = 20;
+    }
+    console.log("outside if block reslut:", reslut);
+  </script>
+</html>
