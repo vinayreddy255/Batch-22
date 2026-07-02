@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * length: Returns the length of a string.
+     * charAt: Returns the character at a specified index.
+     * indexOf: Returns the index of the first occurrence of a specified value in a string.
+     * lastIndexOf: Returns the index of the last occurrence of a specified value in a string.
+     * toUpperCase: Converts a string to uppercase letters.
+     * toLowerCase: Converts a string to lowercase letters.
+     * trim: Removes whitespace from both ends of a string.
+     * split: Splits a string into an array of substrings based on a specified separator.
+     * substring: Returns a portion of a string between two specified indices.
+     * replace: Replaces a specified value with another value in a string.
+     * replaceAll: Replaces all occurrences of a specified value with another value in a string.
+     * repeat: Repeats a string a specified number of times.
+     * includes: Checks if a string contains a specified value.
+     *
+     */
+    var str = "Hello World! React World!";
+    var str1 = "   Hello World!   ";
+    console.log("Length:", str.length);
+    console.log("Character at index 7:", str.charAt(2));
+    console.log("Index of 'o':", str.indexOf("o")); //4
+    // console.log("Index of 'o':", str.indexOf("O"));
+    console.log("Last index of 'o':", str.lastIndexOf("o")); //8
+    console.log("Includes 'World':", str.includes("Wor"));
+    console.log("Uppercase:", str.toUpperCase());
+    console.log("Lowercase:", str.toLowerCase());
+    console.log("length:", str1.length);
+    console.log("Trimmed:", str1.trim());
+    var ar = str.split(" "); //[Hello, world!]
+    console.log("Split:", ar);
+
+    console.log(
+      "Replace 'World' with 'JavaScript':",
+      str.replace("World", "JavaScript"),
+    );
+    console.log(
+      "Replace all 'World' with 'JavaScript':",
+      str.replaceAll("World", "JavaScript"),
+    );
+    console.log("Repeat 3 times:", str.repeat(3));
+
+    console.log("Substring (0, 5):", str.substring(1, 3)); //Hello
+    console.log("substr :", str.substr(1, 3)); //World!
+    // input: hello react js world hello js
+    //input2: hello test
+    // output1: Hello React Js World
+    // output2: hellO reacT jS worlD
+    // output3: hELLo rEACt JS wORLd
+    // output4: HellO ReacT JS WorlD
+    // output5: olleh tcaer sJ dlroW
+    // output6: dlroW sJ tcaer olleh
+    //output7:  count the vowels in the string
+    // output8: remove the duplicates from the string: helo tes
+    // output9: count the each characters in the string
+    // output10: count the each words in the string
+    // output11: find the non repeated characters in the string: hos
+  </script>
+</html>
