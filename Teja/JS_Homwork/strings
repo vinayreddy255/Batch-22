@@ -1,0 +1,16 @@
+    // input: hello react js world hello js
+    //input2: hello test
+    // output1: Hello React Js World
+    // output2: hellO reacT jS worlD
+    // output3: hELLo rEACt JS wORLd
+    // output4: HellO ReacT JS WorlD
+    // output5: olleh tcaer sJ dlroW
+    // output6: dlroW sJ tcaer olleh
+    //output7:  count the vowels in the string
+    // output8: remove the duplicates from the string: helo tes
+    // output9: count the each characters in the string
+    // output10: count the each words in the string
+    
+    // output11: find the non repeated characters in the string: hos
+
+

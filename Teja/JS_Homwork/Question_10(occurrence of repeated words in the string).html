@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    string = "hello react js world hello js"
+    // occurrence of repeated words in the string
+    // output1: hello  js
+    let repeatedWords = [];
+    let wordCount = {};
+    let words = string.split(" ");
+    for (i = 0; i < words.length; i++) {
+        word = words[i];
+        wordCount[word] = (wordCount[word] || 0) + 1;
+    }
+    for (let word in wordCount) {
+        if (wordCount[word] > 1) {
+            repeatedWords.push(word);
+        }
+    }
+    console.log(repeatedWords);
+
+</script>
+</html>
