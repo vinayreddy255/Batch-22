@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     *find: it returns the value of the first element in the provided array that satisfies the provided testing function. Otherwise undefined is returned.
+     * findIndex: it returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.
+     * every: it tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+     * some: it tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value
+     * delete: it removes an element from an array at a specified index, leaving a hole in the array (i.e., the length of the array remains the same).
+     */
+    var arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var fnd = arr1.find(function (value) {
+      return value > 5;
+    });
+    console.log("find value:", fnd);
+    var fndIndex = arr1.findIndex(function (value) {
+      return value > 5;
+    });
+    console.log("findIndex value:", fndIndex);
+    var every = arr1.every(function (value) {
+      return value >= 1;
+    });
+    console.log("every value:", every);
+    var some = arr1.some(function (value) {
+      return value > 5;
+    });
+    console.log("some value:", some);
+    var arr3 = [1, 2, 3, 4, 5];
+    delete arr3[2];
+    console.log("delete value:", arr3);
+  </script>
+</html>

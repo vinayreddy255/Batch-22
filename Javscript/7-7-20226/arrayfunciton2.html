@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * map: it creates a new array populated with the results of calling a provided function on every element in the calling array.
+     * filter: it creates a new array with all elements that pass the test implemented by the provided function.
+     * reduce: it executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+     */
+    var arr3 = [1, 2, 3, 4, 5];
+    var arr4 = arr3.map(function (value) {
+      return value * 2;
+    });
+
+    // console.log("Original array:", arr3);
+    // console.log("Mapped array:", arr4);
+
+    var arr5 = [1, 2, 3, 4, 5];
+    var arr6 = arr5.filter(function (value, index, array) {
+      return value > 3;
+    });
+    // console.log("Original array:", arr5);
+    // console.log("Filtered array:", arr6);
+
+    var arr7 = [1, 2, 3, 4, 5];
+    var sum = arr7.reduce(function (accumulator, currentValue) {
+      return accumulator + currentValue;
+    }, 0);
+    console.log("Original array:", arr7);
+    console.log("Sum of array elements:", sum);
+    var filterReduce = arr7.reduce(function (accumulator, currentValue) {
+      if (currentValue > 3) {
+        accumulator.push(currentValue);
+      }
+      return accumulator;
+    }, []);
+    console.log("Filtered and reduced array:", filterReduce);
+  </script>
+</html>

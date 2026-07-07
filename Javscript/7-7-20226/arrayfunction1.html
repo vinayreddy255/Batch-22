@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * sort: it sorts the elements of an array in place and returns the sorted array. The default sort order is according to string Unicode code points.
+     * isArray: it determines whether the passed value is an Array.
+     * forEach: it executes a provided function once for each array element.
+     * map: it creates a new array populated with the results of calling a provided function on every element in the calling array.
+     * filter: it creates a new array with all elements that pass the test implemented by the provided function.
+     * reduce: it executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+     */
+    var arr1 = ["cherry", "grape", "apple", "banana"];
+    var str = "Hello";
+    arr1.sort();
+    console.log("Sorted array:", arr1);
+    var arr2 = [8, 9, 6, 7, 10, 12, 11, 3, 2, 1, 4, 5];
+    console.log("Original array:", arr2);
+    arr2.sort(function (a, b) {
+      return a - b;
+    });
+    console.log("Sorted array number:", arr2);
+    console.log("is array1:", Array.isArray(arr1)); // true
+    console.log("is array2:", Array.isArray(str)); // false
+
+    var x = arr1.forEach(function (value, index, array) {
+      console.log("Value:", value, "Index:", index, "Array:", array);
+      return value.toUpperCase();
+    });
+    console.log("forEach return value:", x); // undefined
+  </script>
+</html>
