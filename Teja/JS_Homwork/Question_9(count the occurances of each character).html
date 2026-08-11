@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    string_1 = "hello react js world";
+    result = {};
+    for(i = 0; i < string_1.length; i++){
+        if(string_1[i] in result){
+            result[string_1[i]] += 1;
+        } else {
+            result[string_1[i]] = 1;
+        }
+    }
+    console.log(result);
+</script>
+</html>
